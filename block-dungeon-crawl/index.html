@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Block Dungeon Crawl</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="shell">
+    <section class="game-card">
+      <div class="topbar">
+        <div>
+          <h1>Block Dungeon Crawl</h1>
+          <p class="subtitle">A browser-based blocky dungeon crawler with joypad support.</p>
+        </div>
+        <button id="fullscreenButton" type="button">Fullscreen</button>
+      </div>
+
+      <div class="canvas-wrap">
+        <canvas id="game" width="960" height="540" aria-label="Block Dungeon Crawl game canvas"></canvas>
+        <div id="overlay" class="overlay show">
+          <div class="panel">
+            <h2>Block Dungeon Crawl</h2>
+            <p>Explore a procedurally generated dungeon, break crates, collect gems, defeat the Gatekeeper, then find the exit stairs.</p>
+            <div class="controls-grid">
+              <div>
+                <strong>Joypad</strong>
+                <span>Left stick / D-pad: move</span>
+                <span>A / X / RT: attack</span>
+                <span>B: dash</span>
+                <span>Start: pause</span>
+              </div>
+              <div>
+                <strong>Keyboard</strong>
+                <span>WASD / arrows: move</span>
+                <span>Space / mouse: attack</span>
+                <span>Shift: dash</span>
+                <span>Esc / P: pause</span>
+              </div>
+            </div>
+            <button id="startButton" type="button">Start dungeon</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="hud-row">
+        <div id="padStatus" class="status-pill">Joypad: press any controller button</div>
+        <div id="tips" class="status-pill">Tip: open via localhost for the most reliable joypad support.</div>
+      </div>
+    </section>
+  </main>
+  <script src="game.js"></script>
+</body>
+</html>
