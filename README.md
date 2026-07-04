@@ -2,12 +2,18 @@
 
 A small browser-based, blocky dungeon crawler inspired by voxel dungeon games. It uses original placeholder art drawn with Canvas and does not use Minecraft assets.
 
-## How to run
+The game has been placed in this repo under:
 
-The most reliable way is to serve the folder locally:
+```text
+block-dungeon-crawl/
+```
+
+## How to run locally
+
+Clone this repo, then run:
 
 ```bash
-cd block_dungeon_crawl
+cd test/block-dungeon-crawl
 python -m http.server 8000
 ```
 
@@ -17,7 +23,7 @@ Then open:
 http://localhost:8000
 ```
 
-You can also try opening `index.html` directly, but some browsers are stricter with joypad APIs on local files.
+You can also try opening `block-dungeon-crawl/index.html` directly, but some browsers are stricter with joypad APIs on local files.
 
 ## Controls
 
@@ -44,6 +50,6 @@ You can also try opening `index.html` directly, but some browsers are stricter w
 
 ## Files
 
-- `index.html` - page layout
-- `styles.css` - page and overlay styling
-- `game.js` - game engine, dungeon generation, gamepad input, combat, UI
+- `block-dungeon-crawl/index.html` - page layout
+- `block-dungeon-crawl/styles.css` - page and overlay styling
+- `block-dungeon-crawl/game.js` - game engine, dungeon generation, gamepad input, combat, UI
